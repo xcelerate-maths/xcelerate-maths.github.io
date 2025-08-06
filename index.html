@@ -52,12 +52,17 @@
     h1, h2 {
       color: #0d6efd;
     }
+.tagline {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  font-weight: 500;
+}
   </style>
 </head>
 <body>
   <header>
     <h1>Xcelerate Maths</h1>
-    <p>Helping students excel in GCSE and A-Level Maths</p>
+    <p class="tagline">Building confidence and empowering students to excel in Mathematics</p>
   </header>
 
   <nav>
@@ -99,11 +104,49 @@
   </section>
 
   <section id="contact" class="card">
-    <h2>Contact</h2>
-    <p>📧 Email: <a href="mailto:xceleratemaths@gmail.com">xceleratemaths@gmail.com</a></p>
-    <p>📞 Phone: 07852795605</p>
-    <p>Or fill out our enquiry form <a href="#">(coming soon)</a></p>
-  </section>
+  <h2>Contact</h2>
+  <p>📧 Email: <a href="mailto:xceleratemathss@gmail.com">xceleratemathss@gmail.com</a></p>
+  <p>📞 Phone: 07852795605</p>
+
+ <h3>Enquiry Form</h3>
+<form action="https://formspree.io/f/mrblozbr" method="POST">
+  <label for="name">Full Name:</label><br />
+  <input type="text" id="name" name="name" required /><br /><br />
+
+  <label for="email">Email Address:</label><br />
+  <input type="email" id="email" name="email" required /><br /><br />
+
+  <label for="phone">Phone Number (optional):</label><br />
+  <input type="tel" id="phone" name="phone" /><br /><br />
+
+  <label for="year">Student's Year Group:</label><br />
+  <select id="year" name="year" required>
+    <option value="">-- Select Year --</option>
+    <option value="Year 7">Year 7</option>
+    <option value="Year 8">Year 8</option>
+    <option value="Year 9">Year 9</option>
+    <option value="Year 10">Year 10</option>
+    <option value="Year 11">Year 11 (GCSE)</option>
+    <option value="Year 12">Year 12 (A Level)</option>
+    <option value="Year 13">Year 13 (A Level)</option>
+  </select><br /><br />
+
+  <label for="subject">Subject:</label><br />
+  <select id="subject" name="subject" required>
+    <option value="">-- Select Subject --</option>
+    <option value="GCSE Maths">GCSE Maths</option>
+    <option value="A Level Maths">A Level Maths</option>
+    <option value="Both">Both</option>
+  </select><br /><br />
+
+  <label for="message">Additional Details / Questions:</label><br />
+  <textarea id="message" name="message" rows="5" placeholder="Let us know your availability, goals, etc." required></textarea><br /><br />
+
+  <button type="submit">Send Enquiry</button>
+</form>
+
+</section>
+
 
   <section id="testimonials" class="card">
     <h2>Testimonials</h2>
